@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 180vh;
+}
+
+.container {
+    background-color: #121212;
+    width: 700px;
+    color: #FFF;
+    margin: auto;
+    padding: 50px;
+    border: 5px solid red;
+    border-radius: 10px;
+    position: static;
+}
+
+.rede-social h2 {
+    text-align: center;
+}
+
+.rede-social ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.rede-social li {
+    margin-bottom: 12px;
+}
+
+.rede-social a {
+    text-decoration: none;
+    color: #000;
+}
+
+.rede-social a:hover {
+    color: #ff0000;
+}
+
+/*
+    > 1. Por padrão temos o Static ou seja o estatico
+    > 2. Relative elemento é posicionado em relação a sua posição normal.
+    (top, bottom, left, right)
+    > 3. Absolute é posicionado ao elemento pai mais proximo que possui relative se não tiver relative é posicionado em relação ao body
+    > 4. Fixed
+    > 5. Sticky
+ */
+
+ /* Ganha as propriedades Top, bottom, left, right */
+ .area {
+    position: relative;
+    top:150px;
+    left: 90px;
+    border: 5px solid green;
+ }

@@ -1,0 +1,204 @@
+/* Aplicando reset no css padrão */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  --bg-left: #FFFFFF;
+  --font-color-left: #000000;
+  --font-color-right: #FFFFFF; 
+  --border-color: #000000;
+  --btn-color: #0056FB;
+  --bg-right: #0056FB;
+
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  height: 100vh;
+}
+
+#container {
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.left {
+  background-color: var(--bg-left);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-panel {
+  width: 40%;
+}
+
+.login-panel form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-panel input {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.login-panel input::placeholder {
+  color: var(--font-color-left);
+}
+
+.top-list {
+  margin-top: 20px;
+}
+
+.login-panel input[type="submit"] {
+  background-color: var(--btn-color);
+  color: var(--font-color-right);
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.5s linear;  
+}
+
+.login-panel input[type="submit"]:hover {
+  background-color: #008afb;
+}
+
+.login-panel img {
+  opacity: 0.2;
+}
+
+.novo {
+  margin-left: -145px;
+}
+
+.novo p {
+  font-weight: bold;
+}
+
+.novo a {
+  text-decoration: none;
+  color: var(--font-color-left);
+  font-weight: normal;
+}
+
+
+.right {
+  background-color: var(--bg-right);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ilustration {
+  width: 50%;
+}
+
+.ilustration img {
+  width: 100%;
+}
+
+.ilustration h1 {
+  color: var(--font-color-right);
+  font-size: 48px;
+  margin-top: 30px;
+}
+
+.ilustration p {
+  color: var(--font-color-right);
+  margin-top: 30px;
+  opacity: 0.9;
+}
+
+.check {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.check input {
+  margin-left: -180px;
+}
+
+.check label {
+  margin-left: -175px;
+  margin-bottom: 20px;
+} 
+
+@media (max-width: 800px){
+  #container {
+    display: flex;
+    flex-direction: column;
+    height:;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .login-panel {
+    width: 90%;
+  }
+
+  .login-panel img {
+    display: none;
+  }
+
+  .novo p {
+    margin-right: -105px;
+  }
+
+  .ilustration {
+    width: 90%;
+  }
+
+  .ilustration h1 {
+    font-size: 30px;
+  }
+
+  .check input {
+    margin-left: -135px;
+  }
+
+  .check label {
+    margin-left: -125px;
+    font-size: 12px;
+  }
+
+  .novo {
+    margin-left: -215px;
+  }
+  
+  .novo p {
+    font-size: 12px;
+  }
+
+  .novo a {
+    font-size: 12px;
+  }
+}

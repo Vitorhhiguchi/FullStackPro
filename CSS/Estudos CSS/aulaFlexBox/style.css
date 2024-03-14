@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 180vh;
+}
+
+.container {  
+    background-color: #121212;
+    height: 500px;
+    margin: 50px;
+
+    /* Ativando flexbox no container */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;
+}
+
+.area {
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+}
+
+.item-1 {
+    background-color: red;
+    align-self: flex-start;
+}
+
+.item-2 {
+    background-color: blue;
+    align-self: end;
+}
+
+.item-3 {
+    background-color: darkgreen;
+    align-self:normal;   
+}
+
+.item-4 {
+    background-color: brown;
+}
